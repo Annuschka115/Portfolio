@@ -1,5 +1,24 @@
+body{
+    background-color: rgb(32, 20, 53);
+}
 #infoText {
+    color:aliceblue;
     padding-top: 100px;
     text-align: center;
     font-family: Arial, sans-serif;
+}
+
+.maxwell {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url('maxwell_bild.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Der Wechsel beim Hovern */
+.maxwell:hover {
+  background-image: url('maxwell_GIF.gif');
 }
