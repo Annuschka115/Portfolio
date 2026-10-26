@@ -29,8 +29,8 @@ body :before {
         #242035 100%
     );
 
-    -webkit-mask-image: url('assets/stern.svg');
-    mask-image: url('assets/stern.svg');
+    -webkit-mask-image: url('assets/stern_zwei.svg');
+    mask-image: url('assets/stern_zwei.svg');
     -webkit-mask-size:  80px 80px;
     mask-size: 80px 80px;
     -webkit-mask-repeat: repeat;
