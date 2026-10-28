@@ -2,6 +2,7 @@
     --bg-dots: #332c50;
     --bg-color: #211d30;
     --paper:white;
+    --color-hero: rgb(0, 255, 55);
 
      --shadow: 0 6px 14px rgba(60, 40, 20, .25);
 
@@ -104,7 +105,12 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
     padding-top: 100px;
     text-align: center;
 }
+.hero-hello {
+    font-family: dekko;
+    letter-spacing: 2%;
+    color: green;
 
+}
 .maxwell {
     display: flex;
     justify-content: center; 
