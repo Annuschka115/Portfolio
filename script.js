@@ -15,7 +15,10 @@
  });
 
  function animateLight() {
-     currentX += (mouseX - currentX) * delayFactor;
+    Math.round(currentX);
+    Math.round(currentY);
+    
+    currentX += (mouseX - currentX) * delayFactor;
      currentY += (mouseY - currentY) * delayFactor;
 
      document.documentElement.style.setProperty('--mouse-x', currentX + 'px');
