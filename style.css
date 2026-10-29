@@ -2,7 +2,7 @@
     --bg-dots: #332c50;
     --bg-color: #211d30;
     --paper:white;
-    --color-hero: rgb(0, 255, 55);
+    --color-hero: rgb(46, 16, 79);
 
      --shadow: 0 6px 14px rgba(60, 40, 20, .25);
 
@@ -108,9 +108,15 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
 .hero-hello {
     font-family: dekko;
     letter-spacing: 2%;
-    color: green;
-
+    color: var(--color-hero);
+    margin-bottom: 0px;
 }
+.hero-name {
+    font-family: dekko;
+    color: var(--color-hero);
+    margin-top: 1px;
+}
+
 .maxwell {
     display: flex;
     justify-content: center; 
