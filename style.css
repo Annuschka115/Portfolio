@@ -121,7 +121,7 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-image: url('maxwell_bild.jpg');
+    background-image: url('assets/maxwell_bild.jpg');
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -129,5 +129,5 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
 
 /* Der Wechsel beim Hovern */
 .maxwell:hover {
-  background-image: url('maxwell_GIF.gif');
+  background-image: url('assets/maxwell_GIF.gif');
 }
