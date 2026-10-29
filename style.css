@@ -1,5 +1,5 @@
 :root {
-    --bg-dots: #332c50;
+    --bg-stars: #332c50;
     --bg-color: #211d30;
     --paper:white;
     --color-hero: rgb(46, 16, 79);
@@ -61,8 +61,8 @@ body::before {
 
     background-image: radial-gradient(
         circle 200px at var(--mouse-x, -200px) var(--mouse-y, -200px),
-        var(--bg-dots) 0%,
-        var(--bg-dots) 30%,
+        var(--bg-stars) 0%,
+        var(--bg-stars) 30%,
         #242035 100%
     );
 
