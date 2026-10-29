@@ -10,13 +10,17 @@
  const delayFactor = 0.08; 
 
  document.addEventListener('mousemove', (e) => {
+
      mouseX = e.clientX;
      mouseY = e.clientY;
+
+    Math.round(mouseX);
+    Math.round(mouseY);
  });
 
  function animateLight() {
-    Math.round(currentX);
-    Math.round(currentY);
+    // Math.round(currentX);
+    // Math.round(currentY);
     
     currentX += (mouseX - currentX) * delayFactor;
      currentY += (mouseY - currentY) * delayFactor;
