@@ -106,13 +106,13 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
     text-align: center;
 }
 .hero-hello {
-    font-family: dekko;
+    font-family: 'dekko';
     letter-spacing: 2%;
     color: var(--color-hero);
     margin-bottom: 0px;
 }
 .hero-name {
-    font-family: dekko;
+    font-family: 'dekko';
     color: var(--color-hero);
     margin-top: 1px;
 }

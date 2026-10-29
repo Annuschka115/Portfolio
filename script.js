@@ -14,16 +14,13 @@
      mouseX = e.clientX;
      mouseY = e.clientY;
 
-    Math.round(mouseX);
-    Math.round(mouseY);
  });
 
  function animateLight() {
-    // Math.round(currentX);
-    // Math.round(currentY);
+
     
     currentX += (mouseX - currentX) * delayFactor;
-     currentY += (mouseY - currentY) * delayFactor;
+    currentY += (mouseY - currentY) * delayFactor;
 
      document.documentElement.style.setProperty('--mouse-x', currentX + 'px');
      document.documentElement.style.setProperty('--mouse-y', currentY + 'px');
