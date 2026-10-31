@@ -47,6 +47,7 @@ body{
     font-size: 1.2rem;
     line-height: 1.5;
     position: relative;
+    isolation: isolate;
 
 }
 
@@ -66,8 +67,8 @@ body::before {
         #242035 100%
     );
 
-    -webkit-mask-image: url('/assets/stern_zwei.svg');
-    mask-image: url('assets/stern_zwei.svg');
+    -webkit-mask-image: url('assets/Stern_zwei.svg');
+    mask-image: url('assets/Stern_zwei.svg');
     -webkit-mask-size:  80px 80px;
     mask-size: 80px 80px;
     -webkit-mask-repeat: repeat;
