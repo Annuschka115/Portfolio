@@ -16,6 +16,19 @@
 
  });
 
+ const PROJECTS = [
+    {
+        title: "project 1",
+        year: "2024",
+        caption: "Title of Project",
+        thumb: "anne_profile.webp",
+        gif: "maxwell_GIF.gif",
+        description:
+        "Sehr wichtige Details",
+        tags: ["HTML"],
+    }
+ ]
+
  function animateLight() {
 
     
