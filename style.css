@@ -6,10 +6,11 @@
     --tape-pink: rgba(141, 94, 121, 0.75);
     --ink: rgb(25, 10, 41);
     --note-purple:rgb(141, 94, 121);
+    --light-color: #c2a9de;
 
      --shadow: 0 6px 14px rgba(60, 40, 20, .25);
 
-     --font-title: font-family: 'caveat';
+     --font-title: 'alexandria';
 
 }
 
@@ -174,14 +175,17 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
 .hero__nav a:nth-child(3) { background: var(--note-purple);  transform: rotate(1deg); }
 .hero__nav a:hover { transform: rotate(0) scale(1.08); }
 
-.section { max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem; }
 
+
+.section {max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem; font-family: var(--font-title); letter-spacing: .1rem; color: var(--light-color); }
 .section__title {
   font-family: var(--font-title);
   font-size: clamp(2.2rem, 6vw, 3.4rem);
+ 
   text-align: center;
   margin: 0 0 .5rem;
 }
+
 
 .maxwell {
     display: flex;
