@@ -185,8 +185,60 @@ filter: drop-shadow(0px 6px 14px rgba(60, 40, 20, 0.25));
   text-align: center;
   margin: 0 0 .5rem;
 }
+.section-title span{
+    display: inline-block;
+    padding: 0 1rem;
+    background: linear-gradient(transparent 55%, var(--tape-pink) 55%);
+    transform: rotate(-1deg);
+}
+.section-hint { text-align: center; font-family: var(--font-title); font-size: 1.5rem; margin: 0 0 2rem; }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2.5rem 2rem;
+  padding: 1rem;
+}
+.polaroid {
+  position: relative;
+  background: #e8d3f0;
+  padding: .8rem .8rem 1rem;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transform: rotate(var(--rot, 0deg));
+  transition: transform .25s, box-shadow .25s;
+}
+.polaroid:hover,
+.polaroid:focus-visible {
+  transform: rotate(0deg) scale(1.06) translateY(-4px);
+  box-shadow: 0 14px 24px rgba(60, 40, 20, .35);
+  z-index: 2;
+  outline: none;
+}
+.polaroid:focus-visible { outline: 3px dashed var(--accent); outline-offset: 4px; }
 
+.polaroid-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--note-yellow);
+}
+.polaroid-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: repeating-linear-gradient(45deg, var(--note-yellow), var(--note-yellow) 10px, #fff6c4 10px, #fff6c4 20px);
+  font-family: var(--font-type);
+  font-size: .9rem;
+}
+.polaroid-caption { display: block; margin-top: .6rem; font-family: var(--font-title); font-size: 1.7rem; line-height: 1.1; color: var(--color-hero); }
+.polaroid .tape { width: 90px; }
 
 .maxwell {
     display: flex;
