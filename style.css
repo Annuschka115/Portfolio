@@ -1,13 +1,13 @@
 :root {
-    --bg-stars: #332c50;
-    --bg-color: #211d30;
+    --bg-stars: #483886;
+    --bg-color: #1a1238;
     --paper:white;
-    --color-hero: rgb(46, 16, 79);
-    --tape-pink: rgba(141, 94, 121, 0.75);
+    --color-hero: rgb(158, 122, 197);
+    --tape-pink: rgba(192, 94, 149, 0.75);
     --ink: rgb(25, 10, 41);
-    --note-purple:rgb(141, 94, 121);
+    --note-purple:rgb(168, 80, 146);
     --light-color: #c2a9de;
-    --color-title:rgb(120, 81, 161);
+    --color-title:rgb(61, 28, 95);
 
      --shadow: 0 6px 14px rgba(60, 40, 20, .25);
 
@@ -72,7 +72,7 @@ body::before {
         circle 200px at var(--mouse-x, -200px) var(--mouse-y, -200px),
         var(--bg-stars) 0%,
         var(--bg-stars) 30%,
-        #242035 100%
+        #221b41 100%
     );
 
     -webkit-mask-image: url('assets/Stern_zwei.svg');
@@ -141,19 +141,19 @@ body::before {
 .hero-hello {
     font-family: 'dekko';
     letter-spacing: 2%;
-    color: var(--color-hero);
+    color: var(--color-title);
     margin-bottom: 0px;
     margin-top: 0px;
 }
 .hero-name {
     font-family: 'dekko';
-    color: var(--color-hero);
+    color: var(--color-title);
     margin-top: 1px;
     margin-bottom: 0px;
 }
 .hero-role {
     font-family: 'alexandria';
-    color: var(--color-hero);
+    color: var(--color-title);
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom:70px;
@@ -164,7 +164,7 @@ body::before {
 .hero__nav a {
     display: inline-block;
     text-decoration: none;
-    color: var(--ink);
+    color: var(--color-title);
     background: var(--note-purple);
     padding: .3rem 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
@@ -187,6 +187,7 @@ body::before {
 }
 .section-title span {
     display: inline-block;
+    white-space: nowrap;
     font-family: var(--font-dekko);
     color: var(--color-title);
     background-image: url('assets/paper-3-light.webp');
@@ -199,7 +200,7 @@ body::before {
     transform: rotate(-1deg);
 
 } 
-.section-hint { text-align: center; font-family: var(--font-dekko); font-size: 1.5rem; margin: 0 0 2rem; color:var(--light-color) }
+.section-hint { text-align: center; font-family: var(--font-dekko); font-size: 1.5rem; margin: 0 0 2rem; color:var(--color-hero); }
 
 .project-grid {
   display: grid;
@@ -209,7 +210,7 @@ body::before {
 }
 .polaroid {
   position: relative;
-  background: #e8d3f0;
+  background: #655f96;
   padding: .8rem .8rem 1rem;
   border: 0;
   font: inherit;
@@ -241,11 +242,11 @@ body::before {
   place-items: center;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background: repeating-linear-gradient(45deg, var(--note-yellow), var(--note-yellow) 10px, #fff6c4 10px, #fff6c4 20px);
+  background: repeating-linear-gradient(45deg,  #d49dd4 10px, #fff6c4 20px);
   font-family: var(--font-type);
   font-size: .9rem;
 }
-.polaroid-caption { display: block; margin-top: .6rem; font-family: var(--font-title); font-size: 1.7rem; line-height: 1.1; color: var(--color-hero); }
+.polaroid-caption { display: block; margin-top: .6rem; font-family: var(--font-title); font-size: 1.7rem; line-height: 1.1; color: var(--color-title); }
 .polaroid .tape { width: 90px; }
 
 .maxwell {

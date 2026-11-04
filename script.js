@@ -38,11 +38,11 @@ function createProjectCard(project, index) {
     const card= document.createElement("button");
     card.type = "button";
     card.className ="polaroid";
-    card.style.setProperty("--pink",`${rotation(index)}deg`);
+    card.style.setProperty("--rot",`${rotation(index)}deg`);
     card.setAttribute("aria-label", `${project.title} Details und Vorschau öffnen`)
 
     const tape = document.createElement("span");
-    tape.className = `tape tape--${project.tape || "purple"}`;
+    tape.className = `tape tape--${project.tape || "pink"}`;
     card.appendChild(tape);
 
     const src = project.thumb || project.gif ;
@@ -72,6 +72,55 @@ function createProjectCard(project, index) {
 function renderProjects() {
   grid.replaceChildren(...PROJECTS.map(createProjectCard));
 }
+
+
+// function openModal(project, trigger) {
+//     lastTrigger = trigger;
+
+//     modalYear.textContent = project.year || "";
+//     modalTitle.textContent = project.title;
+//     modalDesc.textContent = project.description || "";
+
+//     modalTags.replaceChildren(
+//         ...(project.tags || []).map((tag) => {
+//         const li = document.createElement("li");
+//         li.textContent = tag;
+//         return li;
+//     })
+//     );
+
+//     if (project.link) {
+//         modalLink.href = project.link;
+//         modalLink.hidden = false;
+//     } else {
+//             modalLink.hidden = true;
+//         }
+
+  
+//     modalPlaceholder.hidden = true;
+//     modalGif.hidden = false;
+//     modalGif.alt = `Vorschau von ${project.title}`;
+//     modalPlaceholderPath.textContent = project.gif;
+//     modalGif.onerror = () => {
+//         modalGif.hidden = true;
+//         modalPlaceholder.hidden = false;
+//     };
+//     modalGif.src = project.gif;
+
+//     modal.showModal();
+// }
+
+// function closeModal() {
+//   modal.close();
+// }
+
+// modal.addEventListener("close", () => {
+//   /* GIF entladen, damit es im Hintergrund nicht weiterläuft */
+//   modalGif.removeAttribute("src");
+//   if (lastTrigger) lastTrigger.focus();
+// });
+
+// modalClose.addEventListener("click", closeModal);
 
 
 
